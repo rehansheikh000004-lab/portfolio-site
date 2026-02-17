@@ -95,3 +95,9 @@ button {
 .card a:hover {
   border-color: white;
 }
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
