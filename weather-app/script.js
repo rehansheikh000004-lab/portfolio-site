@@ -6,17 +6,20 @@ btn.onclick = async () => {
 
   if (!city) return;
 
-  const res = await fetch(
-    `https://wttr.in/${city}?format=j1`
-  );
+  result.innerHTML = "Loading...";
 
-  const data = await res.json();
+  try {
+    const res = await fetch(`https://wttr.in/${city}?format=j1`);
+    const data = await res.json();
 
-  const temp = data.current_condition[0].temp_C;
-  const desc = data.current_condition[0].weatherDesc[0].value;
+    const temp = data.current_condition[0].temp_C;
+    const desc = data.current_condition[0].weatherDesc[0].value;
 
-  result.innerHTML = `
-    <p>Temperature: ${temp}°C</p>
-    <p>Condition: ${desc}</p>
-  `;
+    result.innerHTML = `
+      <p>Temperature: ${temp}°C</p>
+      <p>Condition: ${desc}</p>
+    `;
+  } catch {
+    result.innerHTML = "Error fetching weather.";
+  }
 };
