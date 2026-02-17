@@ -1,4 +1,14 @@
-document.getElementById("btn").onclick = () => {
+const btn = document.getElementById("btn");
+
+btn.addEventListener("mouseenter", () => {
+  btn.style.transform = "scale(1.05)";
+});
+
+btn.addEventListener("mouseleave", () => {
+  btn.style.transform = "scale(1)";
+});
+
+btn.onclick = () => {
   document.getElementById("projects").scrollIntoView({
     behavior: "smooth"
   });
