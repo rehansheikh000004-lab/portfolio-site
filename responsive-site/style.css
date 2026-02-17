@@ -3,24 +3,66 @@ body {
   font-family: Arial;
 }
 
-/* NAVBAR */
 .navbar {
   padding: 20px;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
-#menuBtn {
-  margin-top: 10px;
+/* HAMBURGER */
+.hamburger {
+  width: 30px;
+  cursor: pointer;
 }
 
-nav {
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+}
+
+/* MOBILE NAV */
+.nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: white;
   display: none;
   flex-direction: column;
+  padding: 20px;
 }
 
-nav a {
-  margin-top: 10px;
+.nav a {
+  margin: 10px 0;
   text-decoration: none;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav a {
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* HERO */
