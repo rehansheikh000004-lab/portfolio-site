@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#menuBtn {
+  margin-top: 10px;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+}
+
+nav a {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* CARDS */
+.cards {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    margin-left: 20px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1;
+  }
+}
