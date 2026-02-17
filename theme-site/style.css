@@ -1,0 +1,27 @@
+:root {
+  --bg: white;
+  --text: black;
+}
+
+.dark {
+  --bg: #020617;
+  --text: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section {
+  padding: 40px;
+}
