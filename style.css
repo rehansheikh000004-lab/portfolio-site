@@ -26,8 +26,23 @@ body {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 56px;
+  margin: 0;
+}
+
+.hero h2 {
   font-weight: 300;
+  color: #aaa;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* SECTIONS */
