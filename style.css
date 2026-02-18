@@ -101,3 +101,15 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
