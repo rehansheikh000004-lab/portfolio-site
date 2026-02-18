@@ -113,3 +113,27 @@ body {
     flex: 1;
   }
 }
+
+/* ANIMATION BASE */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* STRONG ANIMATION */
+.reveal-strong {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition: 1s ease;
+}
+
+.reveal-strong.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
