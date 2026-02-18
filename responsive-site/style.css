@@ -139,3 +139,21 @@ body {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+
+.cta {
+  margin-top: 20px;
+  padding: 12px 24px;
+}
+
+.features,
+.testimonials,
+.pricing {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #ddd;
+}
