@@ -113,3 +113,34 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #333;
 }
+
+.skill {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.bar {
+  background: #111;
+  height: 10px;
+  border-radius: 6px;
+}
+
+.bar div {
+  height: 10px;
+  background: white;
+  border-radius: 6px;
+}
+
+.card {
+  background: #050505;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #111;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+}
