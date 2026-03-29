@@ -1,8 +1,21 @@
 body {
   margin: 0;
-  font-family: Arial;
-  color: #111;
-  background: linear-gradient(120deg, #f5f7fa, #e4ecf7);
+  font-family: "Segoe UI", sans-serif;
+  color: #0a2540;
+  background: #f6f9fc;
+  overflow-x: hidden;
+}
+
+/* BACKGROUND BLOBS */
+.bg-blur {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #635bff, transparent);
+  top: -200px;
+  left: -200px;
+  filter: blur(120px);
+  z-index: -1;
 }
 
 /* NAVBAR */
@@ -11,12 +24,18 @@ body {
   justify-content: space-between;
   padding: 20px 60px;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
 }
 
 .navbar a {
   margin: 0 15px;
   text-decoration: none;
-  color: #333;
+  color: #425466;
 }
 
 .nav-btn {
@@ -24,61 +43,66 @@ body {
   border: none;
   background: #635bff;
   color: white;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 56px;
   max-width: 700px;
   margin: auto;
+  line-height: 1.2;
 }
 
 .hero p {
   margin-top: 20px;
-  color: #555;
+  color: #425466;
+  font-size: 18px;
 }
 
 .cta {
-  margin-top: 20px;
-  padding: 12px 24px;
+  margin-top: 30px;
+  padding: 14px 28px;
   background: #635bff;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* FEATURES */
 .features {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 60px 20px;
+  gap: 30px;
+  padding: 80px 20px;
 }
 
 .feature-card {
   background: white;
-  padding: 40px;
-  border-radius: 12px;
-  width: 200px;
+  padding: 50px;
+  border-radius: 20px;
+  width: 220px;
   text-align: center;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+
   transition: 0.3s;
 }
 
 .feature-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
-  color: #777;
+  padding: 40px;
+  color: #8898aa;
 }
