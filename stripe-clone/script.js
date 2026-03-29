@@ -1,12 +1,8 @@
-// simple hover animation enhancement
-const cards = document.querySelectorAll(".feature-card");
+const blob = document.querySelector(".bg-blur");
 
-cards.forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    card.style.transform = "translateY(-10px)";
-  });
+let x = 0;
 
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "translateY(0)";
-  });
-});
+setInterval(() => {
+  x += 0.5;
+  blob.style.transform = `translateX(${Math.sin(x) * 30}px)`;
+}, 30);
